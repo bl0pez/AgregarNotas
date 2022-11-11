@@ -1,6 +1,5 @@
 export const types = {
     addNote: '[Notes] Add Note',
-    activeNote: '[Notes] Active Note',
-    editNote: '[Notes] Edit Note',
+    toggleNote: '[Notes] Toggle Note',
     deleteNote: '[Notes] Delete Note',
 }

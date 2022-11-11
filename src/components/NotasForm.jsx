@@ -40,6 +40,7 @@ export const NotasForm = ({ addNota }) => {
             name="nota"
             value={nota}
             onChange={onInputChange}
+            autoComplete="off"
           />
           <span className={`text-danger ${error ? "d-inline-block" : "d-none"}`}>*{error}</span>
         </div>

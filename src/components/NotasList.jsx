@@ -1,5 +1,5 @@
 import { NotasItem } from "./NotasItem"
-export const NotasList = ({notas}) => {
+export const NotasList = ({ notas, deleteNota, toggleNota }) => {
 
     return (
         <>
@@ -8,7 +8,12 @@ export const NotasList = ({notas}) => {
                 <ul className="list-group">
                     {
                         notas.map(nota => (
-                            <NotasItem  nota={nota}  key={nota.id}/>
+                            <NotasItem
+                                key={nota.id}
+                                nota={nota}
+                                deleteNota={deleteNota}
+                                toggleNota={toggleNota}
+                            />
                         ))
                     }
                 </ul>
